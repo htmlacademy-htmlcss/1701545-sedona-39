@@ -2,6 +2,7 @@
 
 * Студент: [Илья Гаврусев](https://up.htmlacademy.ru/htmlcss/39/user/1701545).
 * Наставник: [Карина Королева](https://htmlacademy.ru/profile/id1526731).
+* Сайт: [Мой проект Седона](https://astonv94.github.io/1701545-sedona-39/)
 
 ---
 
