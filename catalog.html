@@ -11,11 +11,13 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="logo-header">
-              <img src="#" alt="Логотип Седона">
+              <img src="#" alt="Логотип Седона" />
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link" href="index.html"
+              >Главная</a
+            >
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -45,37 +47,125 @@
     </header>
 
     <main class="main-catalog">
-
+      <header class="main-catalog-filters">
+        <h1 class="main-catalog-filters-title">Гостиницы Седоны</h1>
+        <ul class="main-catalog-list-breadcrubs">
+          <li class="main-catalog-item-breadcrubs">
+            <a
+              class="main-catalog-link-breadcrubs main-catalog-link-home"
+              href="index.html"
+            >
+              <span class="visually-hidden">На главную</span>
+            </a>
+          </li>
+          <li class="main-catalog-item-breadcrubs">
+            <a class="main-catalog-link-breadcrubs main-catalog-breadcrubs-current">Гостиницы</a>
+          </li>
+        </ul>
+        <section class="header-filters">
+          <h2 class="visually-hidden">Фильтр поиска</h2>
+          <form class="infrastructure" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="infrastructure-filters">
+              <legend class="infrastructure-title">Инфраструктура</legend>
+              <ul class="infrastructure-list">
+                <li class="infrastructure-item">
+                <label>
+                  <input type="checkbox" name="pool" checked>
+                  Бассейн
+                </label>
+                </li>
+                <li class="infrastructure-item">
+                  <label>
+                    <input type="checkbox" name="parking" checked>
+                    Парковка
+                  </label>
+                  </li>
+                  <li class="infrastructure-item">
+                    <label>
+                      <input type="checkbox" name="Wi-Fi">
+                      Wi-Fi
+                    </label>
+                    </li>
+              </ul>
+            </fieldset>
+            <fieldset class="housing-filters">
+              <legend class="housing-title">Тип жилья</legend>
+              <ul class="housing-list">
+                <li class="housing-item">
+                <label>
+                  <input type="radio" name="housing-filters" checked value="hotel">
+                  Гостиница
+                </label>
+                </li>
+                <li class="housing-item">
+                  <label>
+                    <input type="radio" name="housing-filters" value="motel">
+                    Мотель
+                  </label>
+                  </li>
+                  <li class="housing-item">
+                    <label>
+                      <input type="radio" name="housing-filters" value="apartaments">
+                      Апартаменты
+                    </label>
+                  </li>
+              </ul>
+            </fieldset>
+            <fieldset class="price-filters">
+              <legend class="price-title">
+                Стоимость, ₽:
+              </legend>
+              <ul class="price-filters-list">
+                <li class="price-filters-item">
+                  <label for="price-min">От</label>
+                  <input class="price-filters-min" type="number" name="number-min" id="price-min" placeholder="0">
+                </li>
+                <li class="price-filters-item">
+                  <label for="price-max">До</label>
+                  <input class="price-filters-min" type="number" name="number-max" id="price-max" placeholder="9000">
+                </li>
+              </ul>
+              <input class="header-filters-button header-button-accept" type="button" value="Применить">
+              <input class="header-filters-button header-button-reset" type="button" value="Сбросить">
+            </fieldset>
+          </form>
+        </section>
+      </header>
     </main>
 
     <footer class="page-footer">
       <section class="page-footer-social">
-      <h2 class="visually-hidden">Соцсети</h2>
+        <h2 class="visually-hidden">Соцсети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-           <a class="social-button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">В контакте</span>
-           </a>
+            <a class="social-button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">В контакте</span>
+            </a>
           </li>
           <li class="footer-social-item">
             <a class="social-button" href="https://t.me/htmlacademy">
-             <span class="visually-hidden">Телеграм</span>
+              <span class="visually-hidden">Телеграм</span>
             </a>
-           </li>
-           <li class="footer-social-item">
-            <a class="social-button" href=" https://www.youtube.com/user/htmlacademyru">
-             <span class="visually-hidden">Ютуб</span>
+          </li>
+          <li class="footer-social-item">
+            <a
+              class="social-button"
+              href=" https://www.youtube.com/user/htmlacademyru"
+            >
+              <span class="visually-hidden">Ютуб</span>
             </a>
-           </li>
+          </li>
         </ul>
       </section>
       <div class="page-footer-number">
         <h2 class="visually-hidden">Номер телефона</h2>
-        <a class="page-footer-telephone" href="tel: +78128121212">+7 (812) 812-12-12</a>
+        <a class="page-footer-telephone" href="tel: +78128121212"
+          >+7 (812) 812-12-12</a
+        >
       </div>
       <div class="page-footer-logo">
         <a class="page-footer-logo-link" href="https://htmlacademy.ru/">
-          <img src="#" alt="Логотип сайта разработчика">
+          <img src="#" alt="Логотип сайта разработчика" />
         </a>
       </div>
     </footer>
