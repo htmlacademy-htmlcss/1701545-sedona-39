@@ -25,6 +25,7 @@ body {
 }
 
 .navigation-link {
+  font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-size: 20px;
   color: #000;
@@ -36,6 +37,7 @@ body {
 }
 
 .button {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -47,14 +49,14 @@ body {
 .navigation-button{
   color:#FFFFFF;
   background-color: #756157;
-  border-radius: 4px;
 }
 
 .search-hotel-button {
   color:#FFF;
   background-color: #756157;
-  font-size: 16px;
+  font-size: 20px;
   border: 0;
+  line-height: 36px;
 }
 
 .button-submit {
@@ -62,6 +64,7 @@ body {
   background-color:#82B3D3;
   font-size: 20px;
   border: 0;
+  line-height: 36px;
 
 }
 
@@ -125,31 +128,39 @@ body {
   font-size:30px;
   font-weight: 700;
   line-height: 36px;
-
+  text-transform: uppercase;
 }
 
-.advantages-title, .services-title, .title-search-hotel .newsletter-subtitle-catalog {
+.advantages-title, .services-title, .newsletter-subtitle-catalog {
   color: #333;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
 }
+.search-title-hotel {
+  color: #333;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+
+}
 
 /* Блоки с приемуществами и сервисами */
+
+.advantages-item, .services-item {
+  color:#333;
+
+}
 .advantages-title-list, .services-title-list {
+  color:#000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.advantages-description, .services-description {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-}
 
-.box-blue {
+ .box-blue {
   color: #FFF;
   background-color: #82B3D3;
 }
@@ -185,6 +196,17 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   background-size: cover;
   padding: 96px 258px 104px 258px;
 }
+.newsletter-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.newsletter-subtitle{
+  font-size: 22px;
+  line-height: 26px
+}
+
 /* Иконки соц сетей */
 .social-button {
   text-decoration: none;
@@ -274,6 +296,7 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
 .hotels-card-title {
   font-size: 24px;
   line-height: 28px;
+  font-weight: 700;
 }
 
 .frame-type {
