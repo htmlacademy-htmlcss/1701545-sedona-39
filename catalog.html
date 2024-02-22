@@ -35,7 +35,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-button" href="#">Хочу сюда!</a>
+            <a class="navigation-link button navigation-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -110,16 +110,17 @@
               <legend class="price-title">
                 Стоимость, ₽:
               </legend>
-              <ul class="price-filters-list">
-                <li class="price-filters-item">
-                  <label for="price-min">От</label>
-                  <input class="price-filters-min" type="number" name="number-min" id="price-min" placeholder="0">
-                </li>
-                <li class="price-filters-item">
-                  <label for="price-max">До</label>
-                  <input class="price-filters-min" type="number" name="number-max" id="price-max" placeholder="9000">
-                </li>
-              </ul>
+              <div class="price-filters-min">
+                  <label class="visually-hidden">От
+                  <input type="number" name="number-min" id="price-min" placeholder="От">
+                  </label>
+              </div>
+                <div class="price-filters-max">
+                  <label class="visually-hidden">До
+                  <input type="number" name="number-max" id="price-max" placeholder="До">
+                  </label>
+                </div>
+              </div>
               <input class="button filters-button filters-button-accept" type="submit" value="Применить">
               <input class="filters-button filters-button-reset" type="reset" value="Сбросить">
             </fieldset>
@@ -261,18 +262,17 @@
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="social-button" href="https://vk.com/htmlacademy">
+            <a class="social-button vkontakte" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">В контакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-button" href="https://t.me/htmlacademy">
+            <a class="social-button telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="social-button"
-              href=" https://www.youtube.com/user/htmlacademyru">
+            <a class="social-button youtube" href=" https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
@@ -280,7 +280,7 @@
       </section>
       <div class="page-footer-number">
         <h2 class="visually-hidden">Номер телефона</h2>
-        <a class="page-footer-telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="page-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </div>
       <div class="page-footer-logo">
         <a class="page-footer-logo-link" href="https://htmlacademy.ru/">
