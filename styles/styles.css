@@ -28,7 +28,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #000;
-  background-color: #F2F2F2;;
+  background-color: #F2F2F2;
 }
 
 .main-container {
@@ -50,6 +50,7 @@ body {
 .logo-header {
   width: 140px;
   margin-left: 70px;
+  margin-right: 30px;
 }
 
 .navigation{
@@ -109,6 +110,7 @@ body {
   font-size: 20px;
   border: 0;
   line-height: 36px;
+  width: 376px;
 }
 
 .button-submit {
@@ -117,7 +119,7 @@ body {
   font-size: 20px;
   border: 0;
   line-height: 36px;
-
+  width: 232px;
 }
 
 .filters-button-accept {
@@ -234,12 +236,12 @@ body {
 }
 .services-list {
   display: flex;
+  padding-left: 0;
 }
 
  .services-item {
   color:#333;
   width: 400px;
-
 }
 .advantages-title-list, .services-title-list {
   color:#000;
@@ -285,6 +287,7 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
 
 .search-hotel {
   background-color: #fff;
+  text-align: center;
 }
 
 .newsletter {
@@ -293,6 +296,7 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 .newsletter-title {
   font-size: 30px;
@@ -308,16 +312,23 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
+  width: 452px;
+  margin-right: 0 ;
 }
 
 .page-footer {
   background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 /* Иконки соц сетей */
 .social-button {
+  color:#000;
   text-decoration: none;
   background-repeat: no-repeat;
+  width: 47,3px;
 }
 .vkontakte {
   background-image: url("../images/vkontakte-icon.svg");
@@ -339,8 +350,14 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   color: #000;
   background-color: #fff;
   text-decoration: none;
+  width: 330px;
+  margin-left: 195px;
+  margin-right: 195px;
 }
 
+.page-footer-logo {
+  margin-right: 70px;
+}
 
 /* Стилизация каталога с фильтрами */
 .main-catalog-filters {
