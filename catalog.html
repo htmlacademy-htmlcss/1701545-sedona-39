@@ -43,6 +43,7 @@
 
     <main class="main-catalog main-container">
       <section class="main-catalog-filters">
+        <div class="filters-header">
         <h1 class="main-catalog-filters-title">Гостиницы Седоны</h1>
         <ol class="main-catalog-filters-list">
           <li class="main-catalog-filters-item">
@@ -54,9 +55,10 @@
             <a class="main-catalog-filters-link main-catalog-filters-link-current">Гостиницы</a>
           </li>
         </ol>
+        </div>
         <section class="main-catalog-filters-form">
           <h2 class="visually-hidden">Фильтр поиска</h2>
-          <form class="infrastructure" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="form-filters" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="infrastructure-filters">
               <legend class="infrastructure-title">Инфраструктура</legend>
               <ul class="infrastructure-list">
@@ -108,25 +110,28 @@
                 Стоимость, ₽:
               </legend>
               <div class="price-filters-min">
-                  <label class="visually-hidden">От
+                  <label class="visually-hidden">От</label>
                   <input class="price-filters-input" type="number" name="number-min" id="price-min" placeholder="от">
-                  </label>
               </div>
                 <div class="price-filters-max">
-                  <label class="visually-hidden">До
+                  <label class="visually-hidden">До</label>
                   <input class="price-filters-input" type="number" name="number-max" id="price-max" placeholder="до">
-                  </label>
                 </div>
               </fieldset>
-              <input class="button filters-button filters-button-accept" type="submit" value="Применить">
-              <input class="filters-button filters-button-reset" type="reset" value="Сбросить">
+              <div class="filters-button-box">
+                <input class="button filters-button filters-button-accept" type="submit" value="Применить">
+                <input class="filters-button filters-button-reset" type="reset" value="Сбросить">
+              </div>
           </form>
         </section>
       </section>
       <section class="sorting">
         <h2 class="visually-hidden">Результаты поиска</h2>
-          <b class="subtitle sorting-subtitle">Найдено страниц:</b>
-        <span class="sorting-page">38</span>
+        <div class="sorting-header">
+          <div class="flex-sorting-page">
+            <b class="subtitle sorting-subtitle">Найдено страниц:</b>
+              <span class="sorting-page">38</span>
+          </div>
         <select class="sorting-select" name="sorting-result-select">
          <option value="cheap">Сначала дешевые</option>
          <option value="expensive">Сначала дорогие</option>
@@ -149,13 +154,15 @@
             </button>
           </li>
         </ul>
+        </div>
         <section class="hotels-card">
           <h2 class="visually-hidden">Результат фильтрации</h2>
-         <ul class="hotels-card-list">
-          <li class="hotels-card-item">
-            <img class="hotels-card-image" width="300" height="212" src="images/sorting-catalog/card-hotel-1.jpg" alt="Гостиница Amara Resort & Spa">
-            <h3 class="hotels-card-title">Amara Resort & Spa</h3>
-            <p class="frame-type-price">
+          <div class="sorting-body">
+            <ul class="hotels-card-list">
+             <li class="hotels-card-item">
+              <img class="hotels-card-image" width="300" height="212" src="images/sorting-catalog/card-hotel-1.jpg" alt="Гостиница Amara Resort & Spa">
+              <h3 class="hotels-card-title">Amara Resort & Spa</h3>
+              <p class="frame-type-price">
               <span class="frame-type">Гостиница</span>
               <span class="frame-price">От 4000 ₽</span>
             </p>
@@ -217,9 +224,10 @@
               <span class="rating-number">Рейтинг: 5,0</span>
           </li>
          </ul>
+          </div>
          <div class="pagination-catalog">
           <ul class="pagination-catalog-list">
-            <li class="pagination-catalog-item">
+            <li class="pagination-catalog-item pagination-catalog-current">
               <a class="pagination-catalog-link pagination-catalog-link-current">1</a>
             </li>
             <li class="pagination-catalog-item">
@@ -231,7 +239,7 @@
             <li class="pagination-catalog-item">
               <a class="pagination-catalog-link " href="#">4</a>
             </li>
-            <li class="pagination-catalog-item">
+            <li class="pagination-catalog-item pagination-catalog-item-more">
               <a class="pagination-catalog-link pagination-catalog-link-more" href="#">...</a>
             </li>
             <li class="pagination-catalog-item">

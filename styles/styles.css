@@ -14,6 +14,19 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   height: 100%;
 }
@@ -117,27 +130,38 @@ body {
   color: #FFF;
   background-color:#82B3D3;
   font-size: 20px;
-  border: 0;
+  border: none;
   line-height: 36px;
   width: 232px;
 }
 
-.filters-button-accept {
+.filters-button {
+  font-size: 16px;
   line-height: 20px;
   color: #FFF;
-  background-color: #82B3D3;
   border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 191px;
+  height: 36px;
+  padding: 8px 50px;
+}
+
+.filters-button-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.filters-button-accept {
+  background-color: #82B3D3;
 }
 
 .filters-button-reset {
-  color:#FFF;
   background-color: transparent;
   background-repeat: no-repeat;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
   text-transform: uppercase;
-  border: none;
   background: none;
 
 }
@@ -369,12 +393,47 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 70px 70px;
+}
+
+
+.filters-header{
+  width: 100%;
+}
+
+.form-filters {
+  display: flex;
+}
+
+.price-filters {
+  width: 288px;
+  padding: 0;
+  border: none;
+  margin-right: 70px;
+  display: flex;
+}
+
+.pricefilters-input {
+  width: 143px;
+  padding: 12px 20px;
+  justify-content: space-between;
+}
+
+.main-catalog-filters-form {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+  margin: 0;
 }
 
 .main-catalog-filters-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
+  width: 494px;
+  margin: 0;
 }
 
 /* Хлебные крошки */
@@ -386,8 +445,10 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   text-transform: capitalize;
 }
 
-.main-catalog-filters-item{
+.main-catalog-filters-list {
   list-style: none;
+  display: flex;
+  padding-left: 0;
 }
 
 .infrastructure-title, .housing-title, .price-title {
@@ -397,15 +458,38 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   text-transform: capitalize;
 }
 
-.infrastructure-item{
-  list-style: none;
+.infrastructure-filters {
+  width: 150px;
+  padding: 0;
+  margin-right: 70px;
+  border: none;
 }
-.housing-item {
+
+.housing-filters {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.infrastructure-list, .housing-list{
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sorting-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .sorting-subtitle {
   text-transform: uppercase;
+}
+
+.sorting-page {
+  display:inline-flex;
 }
 
 .price-filters-input {
@@ -453,9 +537,20 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
+  width: 292px;
 }
 
 
+.sorting-body {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.hotels-card-list {
+  display: flex;
+  flex-wrap: wrap;
+
+}
 
 .hotels-card-title {
   font-size: 24px;
@@ -465,16 +560,21 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
 
 .hotels-card-item  {
   list-style: none;
+  margin: 20px;
 }
 
 .frame-type {
   color: #333;
   background-color: #fff;
+  width: 140px;
+  text-align: left;
 }
 
 .frame-price{
   color: #333;
   background-color: #fff;
+  width: 140px;
+  text-align: right;
 }
 
 /* Звезды рейтинга */
@@ -493,6 +593,7 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
 }
 
 /* Пагинация */
+
 .pagination-catalog-link {
   font-size: 20px;
   font-weight: 700;
@@ -502,13 +603,28 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   background-color: #82B3D3;
   text-decoration: none;
 }
+.pagination-catalog-item {
+  width: 60px;
+  height: 60px;
+  color:#fff;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  margin-right: 8px;
+  text-align: center;
+  justify-content: center;
 
-.pagination-catalog-link-current {
-  color: #000;
-  background-color: #F2F2F2;
 }
 
-.pagination-catalog-link-more {
+.pagination-catalog-link-current,
+.pagination-catalog-current {
+  color: #000;
+  background-color: #F2F2F2;
+
+
+}
+
+.pagination-catalog-link-more,
+.pagination-catalog-item-more {
   font-size: 22px;
   font-weight: 400;
   color: #000;
@@ -516,9 +632,13 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   background-color: #F2F2F2;
 }
 
-.pagination-catalog-item {
+.pagination-catalog-list {
   list-style: none;
+  display: flex;
+
 }
+
 .newsletter-catalog {
   background-color: #fff;
+  text-align: center;
 }
