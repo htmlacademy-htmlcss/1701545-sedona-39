@@ -44,6 +44,11 @@ body {
   background-color: #F2F2F2;
 }
 
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -81,6 +86,8 @@ body {
 }
 
 .navigation-user {
+  min-width: 22px;
+  max-height: 64px;
   margin-left: auto;
   margin-right: 70px;
 }
@@ -95,8 +102,8 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   text-align: center;
-  margin: 20px 16px;
   display: block;
+  padding: 20px 16px;
 }
 
 
@@ -126,6 +133,7 @@ body {
   border: 0;
   line-height: 36px;
   width: 376px;
+  padding: 8px 50px;
 }
 
 .button-submit {
@@ -135,6 +143,7 @@ body {
   border: none;
   line-height: 36px;
   width: 232px;
+  padding: 8px 50px;
 }
 
 .filters-button {
@@ -197,7 +206,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100%  auto, cover;
   background-position: center bottom, center top;
+
 }
+
 
 .hero-welcome {
   display: block;
@@ -229,6 +240,7 @@ body {
   align-items: center;
   padding:69px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 /* Приемущества */
@@ -236,6 +248,7 @@ body {
 .advantages {
   width: 1200px;
   background-color: #fff;
+  margin-bottom: 0;
 }
 
 .advantages-title, .services-title, .newsletter-subtitle-catalog {
@@ -244,44 +257,59 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  display: block;
   margin: 0;
-
+  padding: 0;
 }
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+
 .advantages-item {
   display: flex;
-  align-content: center;
-  list-style: none;
-  width: 400px;
   height: 385px;
+  list-style-type: none;
   color:#333;
 }
 
-.box-blue {
-  width: 1200px;
+.advantages-description {
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+}
 
+.advantage-text {
+  width: 230px;
+  display: block;
+  text-align: center;
+  padding: 102px 85px;
+}
+
+.advantages-title-list, .services-title-list {
+  display: block;
+  color:#000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .town-sedona {
-  width: 800px;
+  display: block;
   margin-left: auto;
-
 }
 
 .bridge-devil {
-  width: 800px;
+  display: block;
+  margin-right: auto;
   order: -1;
-
 }
-
-.advantages-list{
-  display: flex;
-  padding: 0;
-  text-align: center;
-  flex-wrap: wrap;
-
-}
-
 
 
 .search-title-hotel {
@@ -289,7 +317,6 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-
 }
 
 /* Блоки с приемуществами и сервисами */
@@ -300,37 +327,59 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 64px 0;
+  padding: 96px 304px;
   margin-top: 0;
 }
 
 .services {
   background-color: #fff;
+  margin-top: 0;
 }
 .services-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
  .services-item {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  padding: 80px 85px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color:#333;
-  width: 400px;
-  height: 385px;
+  width: 230px;
+  height: auto;
+  margin: 0;
 }
+
+.services-description {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
 .advantages-title-list, .services-title-list {
+  display: block;
   color:#000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.services-title-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
  .box-blue {
@@ -363,11 +412,13 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
 
 
 .search-hotel {
+  padding: 96px 304px;
   background-color: #fff;
   text-align: center;
 }
 
 .newsletter {
+  padding: 96px 258px 104px;
   color: #fff;
   background-color: #82B3D3;
   background-image: url("../images/subscribe-background.jpg");
@@ -376,11 +427,23 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   text-align: center;
 }
 .newsletter-title {
+  display: block;
+  margin-top: 0;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
+
+.newsletter-subtitle {
+  margin-bottom: 54px;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
 .news-letter-input {
   font-family: "PT Sans";
   color: #000;
@@ -394,10 +457,18 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
 }
 
 .page-footer {
+  margin: 0 auto;
+  width: 1200px;
+  height: 120px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
+  align-content: center;
+}
 
+.page-footer-social {
+  display: flex;
+  margin-left: 70px;
 }
 
 /* Иконки соц сетей */
@@ -417,23 +488,34 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   background-image: url("../images/youtube-icon.svg");
 }
 
-.footer-social-item {
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
+.footer-social-item{
+  min-width: 47px;
+  min-height: 40px;
+}
 .page-footer-phone {
+  display: block;
   font-size: 40px;
   line-height: 40px;
   color: #000;
-  background-color: #fff;
   text-decoration: none;
-  width: 330px;
+  margin-top: 40px;
   margin-left: 195px;
-  margin-right: 195px;
+  margin-right: 194px;
 }
 
-.page-footer-logo {
+.page-footer-logo, .page-footer-logo-link {
+  margin-top: 40px;
   margin-right: 70px;
+  width: 115px;
 }
 
 /* Стилизация каталога с фильтрами */
@@ -540,6 +622,7 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
 .sorting-header {
   display: flex;
   justify-content: space-between;
+  align-items:center;
 }
 
 .flex-sorting-page {
@@ -569,6 +652,7 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
 /* Лейб в фильтрах "От" */
 .price-filters-input::placeholder{
   font-weight: 400;
+  text-align: right;
 }
 
 .sorting-page {
@@ -697,6 +781,7 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
 }
 
 .newsletter-catalog {
+  padding: 96px 258px 104px;
   background-color: #fff;
   text-align: center;
 }
