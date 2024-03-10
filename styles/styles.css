@@ -269,6 +269,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
 
 
@@ -655,18 +656,6 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   margin-bottom: 0;
 }
 
-.sorting {
-  margin: 0;
-  padding: 50px 70px 60px;
-  background-color: #fff;
-}
-
-.sorting-header {
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-}
-
 .flex-sorting-page {
   display:inline;
   padding: 0;
@@ -688,14 +677,26 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   line-height: 24px;
 }
 
-.sorting-button-item{
-  list-style: none;
-}
+
 
 /* Лейб в фильтрах "От" */
 .price-filters-input::placeholder{
   font-weight: 400;
   text-align: right;
+}
+
+.sorting {
+  margin: 0;
+  padding: 50px 70px 60px;
+  background-color: #fff;
+}
+
+.sorting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-page {
@@ -706,16 +707,9 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   text-transform: uppercase;
 }
 
-.price-filters-min .price-filters-max {
-  font-family: "PT Sans";
-  color: #000;
-  background-color: #FFF;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
 .sorting-select {
+  font-family: "PT Sans";
+  padding: 14px 20px;
   color: #333;
   background-color: #FFF;
   font-size: 18px;
@@ -724,6 +718,50 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   width: 292px;
 }
 
+.sorting-button-list {
+  display: flex;
+  margin-left: 0;
+  padding: 0;
+  gap: 8px;
+}
+
+.sorting-button-item {
+  list-style: none;
+}
+
+.sorting-button-icon {
+  width: 48px;
+  height: 48px;
+  background-color:#fff;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.sorting-button-icon-current {
+  border-color: #000;
+}
+
+.sorting-button-icon-grid {
+  background: url("../images/sorting-catalog/button-icon-grid.svg") no-repeat center;
+}
+
+.sorting-button-icon-slide {
+  background: url("../images/sorting-catalog/button-icon-slide.svg") no-repeat center;
+}
+
+.sorting-button-icon-list {
+  background: url("../images/sorting-catalog/button-icon-list.svg") no-repeat center;
+}
+
+.price-filters-min .price-filters-max {
+  font-family: "PT Sans";
+  color: #000;
+  background-color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
 
 
 .hotels-card-title {
