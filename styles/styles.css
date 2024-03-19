@@ -112,7 +112,7 @@ body {
   background-color: #7DB54F;
   width: 20px;
   height: 20px;
-  border-radius: 10px;
+  border-radius: 50%;
   margin: 0;
   padding: 0;
 }
@@ -378,6 +378,7 @@ body {
   align-items: flex-start;
   color:#333;
   width: 230px;
+  height: 223px;
   margin: 0;
 }
 
@@ -863,8 +864,16 @@ background: url("../images/services-icon/home.svg") no-repeat center top rgba(13
   padding: 0;
   margin: 0;
   background-image: url("../images/sorting-catalog/star.svg");
+  background-position: left;
   background-repeat: no-repeat;
 }
+
+/* .two-stars {
+  background-image: url("../images/sorting-catalog/star.svg"), ("../images/sorting-catalog/star.svg");
+  background-repeat: repeat, no-repeat;
+  background-position: 0 0;
+  background-size: 3px 3px, cover;
+} */
 
 .rating-number {
   padding: 9px 22px 8px 23px;
