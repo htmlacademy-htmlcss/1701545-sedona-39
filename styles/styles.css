@@ -178,6 +178,15 @@ body {
   margin-left: 20px;
 }
 
+.navigation-button:hover{
+  background-color: #615048;
+}
+
+.navigation-button:focus{
+  background-color: #615048;
+}
+
+
 .search-hotel-button {
   color:#FFF;
   background-color: #756157;
@@ -341,14 +350,16 @@ body {
 }
 
 .advantages-description {
-  margin: 0;
+  margin-bottom: 0;
   padding: 0;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .advantage-text {
   width: 230px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   padding: 102px 85px;
 }
@@ -440,42 +451,66 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+}
+
+.advantages-title-list:after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background:#0000004D;
+  display: block;
+  margin: 30px auto 0;
 }
 
 .services-title-list {
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 
+.home-icon:before {
+  content:url("../images/services-icon/home.svg");
+  width: 75px;
+  height: 72px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.eat-icon:before {
+  content: url("../images/services-icon/food.svg");
+  width: 75px;
+  height: 72px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.gift-icon::before {
+  content: url("../images/services-icon/gift.svg");
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto 30px;
+}
+
  .box-blue {
-  color: #FFF;
+  color: #ffffff;
   background-color: #82B3D3;
 }
+
+.box-blue:after {
+  content: "";
+  background: #FFFFFF4D;
+}
+
 .box-gray {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: #83b3d31f;
 }
 
 .box-darkgray {
-  background-color: rgba(131, 179, 211, 0.20);
+  background-color: #83b3d333;
 }
 
 .white-box {
-  background-color: #fff;
+  background-color: #ffffff;
 }
-
-.home-icon {
-background: url("../images/services-icon/home.svg") no-repeat center top rgba(131, 179, 211, 0.12);
-}
-
-.eat-icon {
-  background: url("../images/services-icon/food.svg") no-repeat center top;
-}
-
-.gift-icon {
-  background: url("../images/services-icon/gift.svg") no-repeat center top rgba(131, 179, 211, 0.12);
-}
-
 
 .search-hotel {
   padding: 96px 304px;
