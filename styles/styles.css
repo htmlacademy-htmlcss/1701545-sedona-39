@@ -800,17 +800,6 @@ body {
 }
 
 /* Хлебные крошки */
-.main-catalog-filters-link {
-  color:#FFF;
-  font-size: 16px;
-  line-height: 21px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.main-catalog-filters-link-home{
- margin-right: 10px;
-}
 
 .main-catalog-filters-list {
   margin-top: 0;
@@ -819,7 +808,37 @@ body {
   display: flex;
   padding-left: 0;
   min-width: 85px;
+  text-transform: capitalize;
 }
+
+.main-catalog-filters-link {
+  color:#ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  list-style-type: none;
+}
+
+.main-catalog-filters-item {
+  display: block;
+  position: relative;
+  margin-right: 28px;
+}
+
+.main-catalog-filters-item::after {
+  content: url("../images/filters-catalog/breadcrumbs-arrow-icon.svg");
+  margin-left: 10px;
+  display: block;
+  width: 8px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 13px;
+}
+
+.main-catalog-filters-item:last-child::after {
+  content:none;
+}
+
 
 .infrastructure-title, .housing-title, .price-title {
   margin-left: 0;
