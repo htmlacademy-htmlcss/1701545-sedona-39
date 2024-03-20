@@ -98,7 +98,7 @@ body {
   line-height: 24px;
   font-size: 20px;
   color: #000;
-  background-color: #FFF;
+  background-color: #ffffff;
   font-weight: 700;
   text-transform: capitalize;
   text-decoration: none;
@@ -192,7 +192,7 @@ body {
 .navigation-button{
   color:#FFFFFF;
   background-color: #756157;
-  padding: 8px 50px;
+  padding: 8px 34px;
   margin: 0;
   margin-left: 20px;
 }
@@ -233,7 +233,7 @@ body {
 }
 
 .button-submit {
-  color: #FFF;
+  color: #ffffff;
   background-color:#82B3D3;
   font-size: 20px;
   border: none;
@@ -259,7 +259,7 @@ body {
   width: 191px;
   font-size: 16px;
   line-height: 20px;
-  color: #FFF;
+  color: #ffffff;
   border: none;
   font-weight: 700;
   text-transform: uppercase;
@@ -296,7 +296,7 @@ body {
 /* Кнопка "Подробнее" в карточках гостиниц */
 .hotels-card-link {
   display: block;
-  color: #fff;
+  color: #ffffff;
   background-color: #756157;
   text-decoration: none;
   border: none;
@@ -309,7 +309,7 @@ body {
 /* Кнопка в "избранное" */
 .hotels-card-button {
   width: 140px;
-  color: #fff;
+  color: #ffffff;
   background-color: #82B3D3;
   border: none;
 }
@@ -322,7 +322,7 @@ body {
 .hero {
   display: block;
   color: #000;
-  background-color: rgba(131, 179, 211, 0.20);
+  background-color: #83b3d333;
   background-image: url("../images/hero/flag.svg"), url("../images/hero/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: 100%  auto, cover;
@@ -359,7 +359,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding:69px;
+  padding-top:69px;
+  padding-bottom:90px;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -368,12 +369,12 @@ body {
 
 .advantages {
   width: 1200px;
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 0;
 }
 
 .advantages-title, .services-title, .newsletter-subtitle-catalog {
-  color: #333;
+  color: #333333;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -393,7 +394,7 @@ body {
   display: flex;
   height: 385px;
   list-style-type: none;
-  color:#333;
+  color:#333333;
 }
 
 .advantages-description {
@@ -413,7 +414,7 @@ body {
 
 .advantages-title-list, .services-title-list {
   display: block;
-  color:#000;
+  color:#000000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -437,10 +438,12 @@ body {
 
 
 .search-title-hotel {
-  color: #333;
+  color: #333333;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 54px;
 }
 
 /* Блоки с приемуществами и сервисами */
@@ -451,12 +454,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 96px 304px;
+  padding: 64px;
   margin-top: 0;
 }
 
 .services {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-top: 0;
 }
 .services-list {
@@ -474,7 +477,7 @@ body {
   padding: 80px 85px;
   justify-content: center;
   align-items: flex-start;
-  color:#333;
+  color:#333333;
   width: 230px;
   height: 223px;
   margin: 0;
@@ -490,7 +493,7 @@ body {
 
 .advantages-title-list, .services-title-list {
   display: block;
-  color:#000;
+  color:#000000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -561,13 +564,15 @@ body {
 
 .search-hotel {
   padding: 96px 304px;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
 }
 
 .newsletter {
   padding: 96px 258px 104px;
-  color: #fff;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
   background-color: #82B3D3;
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
@@ -586,6 +591,7 @@ body {
 
 .newsletter-subtitle {
   margin-bottom: 54px;
+  margin-top: 20px;
 }
 
 .newsletter-form {
@@ -610,7 +616,7 @@ body {
   margin: 0 auto;
   width: 1200px;
   height: 120px;
-  background-color: #fff;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -724,7 +730,7 @@ body {
 
 /* Стилизация каталога с фильтрами */
 .main-catalog-filters {
-  color: #fff;
+  color: #ffffff;
   background-color: #82B3D3;
   background-image: url("../images/filters-catalog/filters-background.jpg");
   background-size: cover;
@@ -903,7 +909,7 @@ body {
 .sorting {
   margin: 0;
   padding: 50px 70px 60px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .sorting-header {
@@ -929,7 +935,7 @@ body {
   font-family: "PT Sans", sans-serif;
   padding: 14px 20px;
   color: #333;
-  background-color: #FFF;
+  background-color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -952,14 +958,14 @@ body {
   cursor: pointer;
   width: 48px;
   height: 48px;
-  background-color:#fff;
+  background-color:#ffffff;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding: 0;
 }
 
 .sorting-button-icon-current {
-  border-color: #000;
+  border-color: #000000;
 }
 
 .sorting-button-icon-grid {
@@ -975,9 +981,9 @@ body {
 }
 
 .price-filters-min .price-filters-max {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: #000;
-  background-color: #FFF;
+  background-color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1024,16 +1030,16 @@ body {
 }
 
 .frame-type {
-  color: #333;
-  background-color: #fff;
+  color: #333333;
+  background-color: #ffffff;
   width: 140px;
   text-align: left;
 }
 
 
 .frame-price{
-  color: #333;
-  background-color: #fff;
+  color: #333333;
+  background-color: #ffffff;
   width: 140px;
   text-align: right;
 }
@@ -1047,7 +1053,7 @@ body {
 .stars-raiting {
   display: flex;
   justify-content: space-between;
-  background-color: #FFF;
+  background-color: #ffffff;
   margin-bottom: 0;
 }
 
@@ -1061,13 +1067,6 @@ body {
   background-position: left;
   background-repeat: no-repeat;
 }
-
-/* .two-stars {
-  background-image: url("../images/sorting-catalog/star.svg"), ("../images/sorting-catalog/star.svg");
-  background-repeat: repeat, no-repeat;
-  background-position: 0 0;
-  background-size: 3px 3px, cover;
-} */
 
 .rating-number {
   padding: 9px 22px 8px 23px;
@@ -1087,7 +1086,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  color:#fff;
+  color:#ffffff;
   background-color: #82B3D3;
   text-decoration: none;
 }
@@ -1102,7 +1101,7 @@ body {
 
 .pagination-catalog-link-current,
 .pagination-catalog-current {
-  color: #000;
+  color: #000000;
   background-color: #F2F2F2;
 }
 
@@ -1111,7 +1110,7 @@ body {
   padding: 12px 14px;
   font-weight: 400;
   color: #000;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .pagination-catalog-list {
@@ -1127,6 +1126,6 @@ body {
 
 .newsletter-catalog {
   padding: 96px 258px 104px;
-  background-color: #fff;
+  background-color: #ffffff;
   text-align: center;
 }
