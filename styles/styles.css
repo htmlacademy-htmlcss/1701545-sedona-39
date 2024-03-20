@@ -118,12 +118,15 @@ body {
 }
 
 .navigation-link:hover {
-  color:#517acdf3;
+  color:#756157;
 }
 
 .navigation-link:focus {
-  color:#d8dfedf3;
+  color:#756157;
+}
 
+.navigation-link:active {
+  color: #7561574D;
 }
 
 .navigation-user .navigation-link {
@@ -143,11 +146,15 @@ body {
 }
 
 .navigation-link:hover .navigation-user-icon {
-  fill:#517acdf3;
+  fill:#756157;
 }
 
 .navigation-link:focus .navigation-user-icon {
-  color:#d8dfedf3;
+  fill:#756157;
+}
+
+.navigation-link:active .navigation-user-icon {
+  fill: #7561574D;
 }
 
 .number-favourites {
@@ -672,11 +679,48 @@ body {
   margin-right: 194px;
 }
 
+.page-footer-phone:hover {
+  color: #756157;
+}
+
+.page-footer-phone:focus {
+  color: #756157;
+}
+
+.page-footer-phone:active {
+  color: #7561574D;
+}
+
 .page-footer-logo, .page-footer-logo-link {
   margin-top: 40px;
   margin-right: 70px;
   width: 115px;
+  position: relative;
 }
+
+.html-logo-icon {
+  fill: #000000;
+  position: absolute;
+  display: block;
+  top: 15px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.page-footer-logo-link:hover .html-logo-icon {
+  fill: #756157;
+}
+
+.page-footer-logo-link:focus .html-logo-icon {
+  fill: #756157;
+}
+
+.page-footer-logo-link:active .html-logo-icon {
+  fill: #7561574D;
+}
+
 
 /* Стилизация каталога с фильтрами */
 .main-catalog-filters {
