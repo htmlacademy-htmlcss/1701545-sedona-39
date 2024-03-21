@@ -108,16 +108,18 @@ body {
   text-align: center;
   display: block;
   padding: 20px 16px;
+  position: relative;
 }
 
-.navigation-link-current::after {
+.navigation-link-current::before {
   display: block;
-  position: relative;
-  width: 100%;
+  position: absolute;
+  bottom: 0;
   height: 2px;
-  top: 21px;
   content: "";
   background-color: #756257;
+  right: 16px;
+  left: 16px;
 }
 
 .navigation-link:hover {
@@ -890,7 +892,7 @@ body {
 }
 
 .main-catalog-filters-link-home .breadcrumbs-icon:hover {
-  fill: #E6E6E6;
+  fill: #e4e2dc;
 }
 
 .main-catalog-filters-item {
@@ -1155,6 +1157,7 @@ body {
   background-color: #ffffff;
   margin-bottom: 0;
   max-height: 37px;
+  align-items: center;
 }
 
 .three-stars::before {
@@ -1179,11 +1182,12 @@ body {
 }
 
 .rating-number {
-  padding: 9px 22px 8px 23px;
-  color: #333;
+  padding: 8px 17px 8px;
+  color: #333333;
   border-radius: 4px;
   background-color: #F2F2F2;
   margin-left: 20px;
+  text-transform: uppercase;
 }
 
 /* Пагинация */
