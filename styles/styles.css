@@ -104,11 +104,11 @@ body {
   background-color: #ffffff;
   font-weight: 700;
   text-transform: capitalize;
-  text-decoration: none;
   text-align: center;
   display: block;
   padding: 20px 16px;
   position: relative;
+  text-decoration: none;
 }
 
 .navigation-link-current::before {
@@ -126,7 +126,7 @@ body {
   color: #756157;
 }
 
-.navigation-link:focus {
+.navigation-link:focus-within {
   color: #756157;
 }
 
@@ -157,7 +157,7 @@ body {
   fill: #756157;
 }
 
-.navigation-link:focus .navigation-user-icon {
+.navigation-link:focus-within .navigation-user-icon {
   fill: #756157;
 }
 
@@ -208,7 +208,7 @@ body {
   background-color: #615048;
 }
 
-.navigation-button:focus {
+.navigation-button:focus-within {
   background-color: #615048;
 }
 
@@ -231,7 +231,7 @@ body {
   background-color: #615048;
 }
 
-.search-hotel-button:focus {
+.search-hotel-button:focus-within {
   background-color: #615048
 }
 
@@ -254,7 +254,7 @@ body {
   background-color: #68A2CA;
 }
 
-.button-submit:focus {
+.button-submit:focus-within {
   background-color: #68A2CA;
 }
 
@@ -293,7 +293,7 @@ body {
   background-color: #68A2CA;
 }
 
-.filters-button-accept:focus {
+.filters-button-accept:focus-within {
   background-color: #68A2CA;
 }
 
@@ -329,7 +329,7 @@ body {
   background-color: #615048;
 }
 
-.hotels-card-link:focus {
+.hotels-card-link:focus-within {
   background-color: #615048;
 }
 
@@ -350,7 +350,7 @@ body {
   background-color: #68A2CA;
 }
 
-.hotels-card-button:focus {
+.hotels-card-button:focus-within {
   background-color: #68A2CA;
 }
 
@@ -367,7 +367,7 @@ body {
   background-color: #6C9E42;
 }
 
-.hotels-card-button-current:focus {
+.hotels-card-button-current:focus-within {
   background-color: #6C9E42;
 }
 
@@ -678,11 +678,12 @@ body {
 .page-footer {
   margin: 0 auto;
   width: 1200px;
-  height: 120px;
+  min-height: 120px;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-content: center;
+  flex-wrap: wrap;
 }
 
 .page-footer-social {
@@ -714,7 +715,7 @@ body {
   fill: #68A2CA;
 }
 
-.social-link:focus .social-icon {
+.social-link:focus-within .social-icon {
   fill: #68A2CA;
 }
 
@@ -744,8 +745,8 @@ body {
   line-height: 40px;
   color: #000;
   text-decoration: none;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: 195px;
   margin-right: 194px;
 }
@@ -754,7 +755,7 @@ body {
   color: #756157;
 }
 
-.page-footer-phone:focus {
+.page-footer-phone:focus-within {
   color: #756157;
 }
 
@@ -764,10 +765,11 @@ body {
 
 .page-footer-logo,
 .page-footer-logo-link {
-  margin-top: 40px;
+  margin-top: 50px;
   margin-right: 70px;
   width: 115px;
   position: relative;
+  padding: 0;
 }
 
 .html-logo-icon {
@@ -785,7 +787,7 @@ body {
   fill: #756157;
 }
 
-.page-footer-logo-link:focus .html-logo-icon {
+.page-footer-logo-link:focus-within .html-logo-icon {
   fill: #756157;
 }
 
@@ -1023,7 +1025,7 @@ body {
   border-color: #000000;
 }
 
-.sorting-select:focus {
+.sorting-select:focus-within {
   border-color: #68A2CA;
 }
 
@@ -1057,7 +1059,7 @@ body {
   border-color: #000000;
 }
 
-.sorting-button-icon:focus {
+.sorting-button-icon:focus-within {
   border-color: #68A2CA;
 }
 
@@ -1209,7 +1211,7 @@ body {
   background-color: #68A2CA;
 }
 
-.pagination-catalog-link:focus:not(.pagination-catalog-link-current, .pagination-catalog-link-more) {
+.pagination-catalog-link:focus-within:not(.pagination-catalog-link-current, .pagination-catalog-link-more) {
   background-color: #68A2CA;
 }
 
