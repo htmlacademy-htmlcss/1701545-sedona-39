@@ -1233,7 +1233,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .frame-type-price {
   display: flex;
   justify-content: space-between;
-  margin: 16px 0 16px 0;
+  margin-bottom: 16px;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -1289,7 +1290,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .rating-number {
-  padding: 8px 17px 8px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 22px 8px;
   color: #333333;
   border-radius: 4px;
   background-color: #F2F2F2;
@@ -1343,19 +1346,27 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 22px;
   padding: 12px 14px;
   font-weight: 400;
-  color: #000;
+  color: #000000;
   background-color: #ffffff;
 }
 
 .pagination-catalog-list {
   margin-right: auto;
-  margin-top: 80px;
+  margin-top: 40px;
   padding: 0;
   list-style: none;
   display: flex;
   margin-bottom: 0;
   gap: 8px;
+}
 
+.diving-line::before {
+  content: "";
+  width: 1060px;
+  height: 1px;
+  background: #E6E6E6;
+  display: block;
+  margin: 40px auto 0;
 }
 
 .newsletter-catalog {
