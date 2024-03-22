@@ -840,11 +840,31 @@ body {
   font-weight: 700;
   line-height: 24px;
   padding: 12px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.price-filters-input:hover,
+.price-filters-input:focus {
+  border-color: #E6E6E6;
+}
+
+.price-filters-input:focus {
+  outline: 3px solid #83B3D3;;
+}
+
+/* Скрывает в инпуте "числовые стрелочки" */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .price-filters-input::placeholder {
   font-weight: 400;
   text-align: right;
+  margin-right: -12px;
 }
 
 .price-filters-min {
@@ -1022,15 +1042,11 @@ body {
 }
 
 .sorting-select:hover {
-  border-color: #000000;
+  border-color: #68A2CA;
 }
 
 .sorting-select:focus-within {
   border-color: #68A2CA;
-}
-
-.sorting-select:active {
-  border-color: #000000;
 }
 
 .sorting-button-list {
