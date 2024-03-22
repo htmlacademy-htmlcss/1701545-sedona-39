@@ -1218,6 +1218,21 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 16px 0 16px 0;
 }
 
+.hotels-image-link{
+  color: inherit;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hotels-image-link:hover{
+  opacity: 0.6;
+}
+
+.hotels-image-link:active{
+  opacity: 0.3;
+}
+
 .hotels-card-list {
   display: flex;
   flex-wrap: wrap;
