@@ -826,6 +826,10 @@ body {
   padding: 0;
   border: none;
   margin-right: 70px;
+  display: block;
+}
+
+.price-filters-max-min {
   display: flex;
 }
 
@@ -854,7 +858,6 @@ body {
 }
 
 /* Скрывает в инпуте "числовые стрелочки" */
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -878,6 +881,39 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 0 4px 4px 0;
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #ffffff4d;
+  margin-top: 36px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  left: 186px;
+}
 
 .main-catalog-filters-form {
   justify-content: space-between;
