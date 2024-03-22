@@ -71,9 +71,13 @@ body {
   display: block;
   position: relative;
   width: 140px;
+  margin-bottom: -6px;
+}
+
+.logo-header-link {
+  width: 140px;
   margin-left: 70px;
   margin-right: 30px;
-  margin-bottom: -6px;
 }
 
 .navigation {
