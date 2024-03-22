@@ -107,7 +107,8 @@
               <ul class="housing-list">
                 <li class="housing-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="housing-filters" checked value="hotel">
+                    <input class="visually-hidden control-input" type="radio" name="housing-filters" checked
+                      value="hotel">
                     <span class="control-mark"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
@@ -121,7 +122,8 @@
                 </li>
                 <li class="housing-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="housing-filters" value="apartaments">
+                    <input class="visually-hidden control-input" type="radio" name="housing-filters"
+                      value="apartaments">
                     <span class="control-mark"></span>
                     <span class="control-label">Апартаменты</span>
                   </label>
@@ -133,27 +135,29 @@
                 Стоимость, ₽:
               </legend>
               <div class="price-filters-max-min">
-              <div class="price-filters-min">
-                <label class="visually-hidden">От</label>
-                <input class="price-filters-input price-filters-min" type="number" value="0" name="number-min" id="price-min"
-                  placeholder="от">
-              </div>
-              <div class="price-filters-max">
-                <label class="visually-hidden">До</label>
-                <input class="price-filters-input price-filters-max" type="number" value="9000" name="number-max" id="price-max"
-                  placeholder="до">
-              </div>
-            </div>
-                <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 206px">
-                    <button class="range-toggle toggle-min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену</span>
-                    </button>
-                    <button class="range-toggle toggle-max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену</span>
-                    </button>
-                  </div>
+                <div class="price-filters-min">
+                  <label class="visually-hidden">От</label>
+                  <input class="price-filters-input price-filters-min" type="number" value="0" name="number-min"
+                    id="price-min">
+                    <span class="price-label">от</span>
                 </div>
+                <div class="price-filters-max">
+                  <label class="visually-hidden">До</label>
+                  <input class="price-filters-input price-filters-max" type="number" value="9000" name="number-max"
+                    id="price-max">
+                    <span class="price-label">до</span>
+                </div>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 206px">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
+              </div>
             </fieldset>
             <div class="filters-button-box">
               <input class="button filters-button filters-button-accept" type="submit" value="Применить">

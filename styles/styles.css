@@ -855,7 +855,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  padding: 12px 20px;
+  padding: 12px 38px 12px 20px;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -876,11 +876,6 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.price-filters-input::placeholder {
-  font-weight: 400;
-  text-align: right;
-  margin-right: -12px;
-}
 
 .price-filters-min {
   display: block;
@@ -893,11 +888,25 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 0 4px 4px 0;
 }
 
+.price-filters-min,
+.price-filters-max{
+  position: relative;
+}
+
+.price-label {
+  position: absolute;
+  color:#000000;
+  opacity: 0.3;
+  top:0;
+  right:20px;
+  transform: translateY(50%);
+}
+
 .range-scale {
   position: relative;
   height: 4px;
   background-color: #ffffff4d;
-  margin-top: 36px;
+  margin-top: 40px;
 }
 
 .range-bar {
