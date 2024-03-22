@@ -267,7 +267,16 @@ body {
   background-color: #82B3D3;
 }
 
+.filters-button-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
 .filters-button {
+  font-family: inherit;
   box-sizing: border-box;
   width: 190px;
   font-size: 16px;
@@ -280,19 +289,20 @@ body {
   padding: 8px 50px;
 }
 
-.filters-button-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-
 .filters-button-accept {
   display: block;
-  padding: 8px 50px;
   background-color: #82B3D3;
   margin-top: auto;
+}
+
+.filters-button-reset {
+  padding: 8px 50px;
+  margin-top: 30px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background: none;
+  cursor: pointer;
+  align-items: center;
 }
 
 .filters-button-accept:hover {
@@ -307,16 +317,6 @@ body {
   background-color: #82B3D3;
 }
 
-.filters-button-reset {
-  padding: 8px 50px;
-  margin-top: 30px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  text-transform: uppercase;
-  background: none;
-  cursor: pointer;
-  align-items: center;
-}
 
 .filters-button-reset:hover {
   opacity: 0.6;
