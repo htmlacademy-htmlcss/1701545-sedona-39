@@ -192,6 +192,49 @@
         </a>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-visit">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="visit-form-date" actiom="https://echo.htmlacademy.ru/" method="post">
+          <div class="date-visit">
+            <label class="modal-label-title date-visit-title" for="data-visit">Дата заезда:</label>
+              <input class="date-visit-input" type="text" name="date-visiit" id="data-visit" value="27 апреля 2020" placeholder="Укажите дату" required>
+          </div>
+          <div class="date-leave">
+            <label class="modal-label-title date-leave-title" for="date-leave">Дата выезда:</label>
+              <input class="date-visit-input" type="text" name="date-leave" id="date-leave" value="1 сентября 2023" placeholder="Укажите дату" >
+          </div>
+          <div class="modal-number-passengers">
+          <div class="grown-number">
+            <label class="modal-label-title people-number-title" for="people-nmber">Взрослые:</label>
+            <button class="button-modal-number button-minus" type="button">
+              <span class="visually-hidden">Кнопка меньше</span>
+            </button>
+              <input class="people-number-input" type="number" value="2" id="people-nmber" name="number-grown">
+              <button class="button-modal-number button-plus" type="button">
+                <span class="visually-hidden">Кнопка больше</span>
+              </button>
+            </div>
+          <div class="children-number">
+            <label class="modal-label-title people-number-title" for="number-children">Дети:</label>
+            <button class="button-modal-number button-minus"type="button">
+              <span class="visually-hidden">Кнопка меньше</span>
+            </button>
+              <input class="people-number-input" type="number" id="number-children" value="2" name="number-children">
+              <button class="button-modal-number button-plus" type="button">
+                <span class="visually-hidden">Кнопка больше</span>
+              </button>
+            </div>
+          </div>
+          <button class="button-modal-find" type="submit">Найти</button>
+        </form>
+      </section>
+      </div>
+    </div>
     </div>
   </body>
 
