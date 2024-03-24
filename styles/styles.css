@@ -55,16 +55,11 @@ body {
 
 /* Центрирует элементы страницы: margin и width */
 
-.page-header,
-.main-index,
-.page-footer,
-.main-catalog {
+.page-container {
   margin: 0 auto;
   width: 1200px;
-}
-
-.page-header {
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 }
 
 .logo-header {
