@@ -35,7 +35,7 @@ body {
   margin-top: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -66,7 +66,7 @@ body {
 }
 
 .page-footer {
-  margin-top:auto;
+  flex: 0 0 auto;
 }
 
 .logo-header {
@@ -1187,18 +1187,15 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .sorting-button-icon-grid {
-  background: url("../images/sorting-catalog/button-icon-grid.svg") no-repeat
-    center;
+  background: url("../images/sorting-catalog/button-icon-grid.svg") no-repeat center;
 }
 
 .sorting-button-icon-slide {
-  background: url("../images/sorting-catalog/button-icon-slide.svg") no-repeat
-    center;
+  background: url("../images/sorting-catalog/button-icon-slide.svg") no-repeat center;
 }
 
 .sorting-button-icon-list {
-  background: url("../images/sorting-catalog/button-icon-list.svg") no-repeat
-    center;
+  background: url("../images/sorting-catalog/button-icon-list.svg") no-repeat center;
 }
 
 .price-filters-min .price-filters-max {
@@ -1343,24 +1340,18 @@ input[type="number"]::-webkit-outer-spin-button {
   border: none;
 }
 
-.pagination-catalog-link:hover:not(
-    .pagination-catalog-link-current,
-    .pagination-catalog-link-more
-  ) {
+.pagination-catalog-link:hover:not(.pagination-catalog-link-current,
+  .pagination-catalog-link-more) {
   background-color: #68a2ca;
 }
 
-.pagination-catalog-link:focus-within:not(
-    .pagination-catalog-link-current,
-    .pagination-catalog-link-more
-  ) {
+.pagination-catalog-link:focus-within:not(.pagination-catalog-link-current,
+  .pagination-catalog-link-more) {
   background-color: #68a2ca;
 }
 
-.pagination-catalog-link:active:not(
-    .pagination-catalog-link-current,
-    .pagination-catalog-link-more
-  ) {
+.pagination-catalog-link:active:not(.pagination-catalog-link-current,
+  .pagination-catalog-link-more) {
   background-color: #82b3d3;
 }
 
@@ -1449,7 +1440,7 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 20px;
   top: 17px;
   left: 16px;
-  fill:#000000;
+  fill: #000000;
 }
 
 .modal-close-button:hover,
@@ -1463,7 +1454,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .modal-close-button:active .modal-close-button-icon {
-  fill: #000000;;
+  fill: #000000;
+  ;
   opacity: 0.3;
   outline: none;
 }
@@ -1535,7 +1527,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .date-visit-input:focus {
   background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;;
+  outline: 3px solid #83B3D3;
+  ;
 }
 
 .modal-calendar-icon {
@@ -1611,7 +1604,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: #E6E6E6;
 }
 
-.people-number-input:focus-visible{
+.people-number-input:focus-visible {
   background-color: #E6E6E6;
   outline: none;
 }
@@ -1639,8 +1632,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .modal-button-minus-icon,
 .modal-button-plus-icon {
   position: absolute;
-  fill:#756157;
-  opacity:0.3;
+  fill: #756157;
+  opacity: 0.3;
   top: 0;
   left: 0;
   right: 0;
@@ -1673,7 +1666,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .button-plus {
-  border-radius:0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
   position: relative;
 }
 
@@ -1688,12 +1681,13 @@ input[type="number"]::-webkit-outer-spin-button {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  width:100%;
+  width: 100%;
   padding: 18px 77px 18px 77px;
   border-radius: 10px;
   background: #83B3D3;
   border: none;
 }
+
 .button-modal-find:hover,
 .button-modal-find:focus {
   background-color: #68A2CA;
@@ -1726,7 +1720,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .tooltip-toggle:hover,
-.tooltip-toggle:focus-visible{
+.tooltip-toggle:focus-visible {
   background-color: #68A2CA;
 }
 
@@ -1749,7 +1743,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-weight: 400;
   line-height: 20px;
   width: 216px;
-  min-height:110px;
+  min-height: 110px;
   padding: 22px 18px 11px 22px;
   border-radius: 10px;
   position: absolute;
@@ -1757,7 +1751,7 @@ input[type="number"]::-webkit-outer-spin-button {
   right: 45%;
   z-index: 1;
   align-items: center;
-  margin:0;
+  margin: 0;
 }
 
 .tooltip-text:before {
@@ -1767,8 +1761,8 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 9px;
   position: absolute;
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
