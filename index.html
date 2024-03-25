@@ -213,7 +213,7 @@
             <label class="modal-label-title date-leave-title" for="date-leave">Дата выезда:</label>
               <input class="date-visit-input" type="text" name="date-leave" id="date-leave" value="1 сентября 2023" placeholder="Укажите дату" >
               <span class="modal-calendar-icon"></span>
-              <span class="modal-second-comment">Мы не можем отправить вас в прошлое.</span>
+              <span class="modal-second-comment">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="modal-number-passengers">
           <div class="grown-number">
@@ -230,6 +230,14 @@
             </div>
           <div class="children-number">
             <label class="modal-label-title people-number-title" for="number-children">Дети:</label>
+            <span class="tooltip">
+            <button class="tooltip-toggle" type="button">
+              <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12" fill="currentColor">
+                <path clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white"/>
+                </svg>
+            </button>
+            <p class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+            </span>
             <button class="button-modal-number button-minus"type="button">
               <svg class="modal-button-minus-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"><path d="M3 9v2h14V9H3Z"></svg>
               <span class="visually-hidden">Кнопка меньше</span>
