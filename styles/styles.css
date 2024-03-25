@@ -56,10 +56,17 @@ body {
 /* Центрирует элементы страницы: margin и width */
 
 .page-container {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   width: 1200px;
+  margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-footer {
+  margin-top:auto;
 }
 
 .logo-header {
@@ -665,6 +672,7 @@ button:disabled {
   width: 452px;
   margin-right: 0;
   padding: 12px 20px;
+  cursor: pointer;
 }
 
 .news-letter-input:focus-visible {
@@ -1416,9 +1424,9 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal-visit {
   width: 577px;
@@ -1428,31 +1436,38 @@ input[type="number"]::-webkit-outer-spin-button {
   position: absolute;
   top: 64px;
   right: 52px;
-  width: 52px;
-  height: 52px;
-  background-color: #f2f2f2;
-  background-image: url("../images/close-cross-modal.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 53px;
+  height: 53px;
   border: none;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.modal-close-button:hover {
+.modal-close-button-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 17px;
+  left: 16px;
+  fill:#000000;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus-visible,
+.modal-close-button:active {
   background-color: #E6E6E6;
 }
 
-.modal-close-button:focus-within{
-  background-color: #E6E6E6;
+.modal-close-button:focus-visible {
   outline: 3px solid #83B3D3;
 }
 
-.modal-close-button:active{
-  background-color: #E6E6E6;
+.modal-close-button:active .modal-close-button-icon {
+  fill: #000000;;
   opacity: 0.3;
   outline: none;
 }
+
 
 .modal-title {
   margin: 0;
@@ -1496,13 +1511,6 @@ input[type="number"]::-webkit-outer-spin-button {
   position: relative;
 }
 
-.data-visit:after {
-  content: "Мы не можем отправить вас в прошлое.";
-  color: #FF5757;
-  position: absolute;
-  top:0;
-  left:0;
-}
 
 .date-visit-input {
   cursor: pointer;
@@ -1517,6 +1525,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: #f2f2f2;
   padding: 12px 295px 12px 20px;
   border-radius: 4px;
+  position: relative;
 }
 
 .date-visit-input:hover {
@@ -1526,6 +1535,39 @@ input[type="number"]::-webkit-outer-spin-button {
 .date-visit-input:focus {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;;
+}
+
+.modal-calendar-icon {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/modal-calendar.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.modal-first-comment {
+  color: #FF5757;
+  position: absolute;
+  top: 52px;
+  left: 137px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.date-leave {
+  position: relative;
+}
+
+.modal-second-comment {
+  position: absolute;
+  top: 52px;
+  left: 137px;
+  padding-left: 20px;
+  font-size: 16px;
 }
 
 .modal-number-passengers {
@@ -1554,9 +1596,10 @@ input[type="number"]::-webkit-outer-spin-button {
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
-  max-width: 20px;
-  padding: 14px 10px;
+  max-width: 37px;
+  padding: 14px 3px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .people-number-input:hover {
@@ -1565,7 +1608,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .people-number-input:focus-visible{
   background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;;
+  outline: none;
 }
 
 .people-number-input:active {
@@ -1574,40 +1617,60 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .button-modal-number {
-  width: 40px;
-  height: 48px;
-  border: none;
-  background-color: #F2F2F2;
   cursor: pointer;
-}
-
-.button-modal-number:hover{
-  background-color: #E6E6E6;
-}
-
-.button-modal-number:focus {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;;
-}
-
-.button-modal-number:active {
-  opacity: 0.3;
-  outline: none;
+  height: 48px;
+  width: 40px;
+  border: none;
+  background: #F2F2F2;
+  padding: 0;
 }
 
 .button-minus {
   border-radius: 4px 0 0 4px;
-  background-image: url("../images/modal-button-minus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
+}
+
+.modal-button-minus-icon,
+.modal-button-plus-icon {
+  position: absolute;
+  fill:#756157;
+  opacity:0.3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.button-modal-number:hover .modal-button-minus-icon,
+.button-modal-number:hover .modal-button-plus-icon,
+.button-modal-number:focus-visible .modal-button-minus-icon,
+.button-modal-number:focus-visible .modal-button-plus-icon,
+.button-modal-number:active .modal-button-minus-icon,
+.button-modal-number:active .modal-button-plus-icon {
+  fill: #000000;
+  opacity: 1;
+}
+
+.button-modal-number:focus-visible .modal-button-minus-icon,
+.button-modal-number:focus-visible .modal-button-plus-icon {
+  outline: 3px solid #82B3D3;
+}
+
+.button-modal-number:active .modal-button-minus-icon,
+.button-modal-number:active .modal-button-plus-icon {
+  fill-opacity: 0.2;
+  outline: none;
 }
 
 .button-plus {
   border-radius:0 4px 4px 0;
-  background-image: url("../images/modal-button-plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
 }
+
 
 .button-modal-find {
   cursor: pointer;
@@ -1625,7 +1688,6 @@ input[type="number"]::-webkit-outer-spin-button {
   background: #83B3D3;
   border: none;
 }
-
 .button-modal-find:hover,
 .button-modal-find:focus {
   background-color: #68A2CA;
