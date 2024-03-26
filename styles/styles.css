@@ -32,16 +32,19 @@ html {
 }
 
 body {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #000;
   background-color: #f2f2f2;
+  text-align: center;
 }
 
 .img {
@@ -65,10 +68,6 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-.page-footer {
-  flex: 0 0 auto;
-}
-
 .logo-header {
   display: block;
   position: relative;
@@ -78,25 +77,29 @@ body {
 
 .logo-header-link {
   width: 140px;
-  margin: 0 30px 0 70px;
+  margin: 0 28px 0 70px;
 }
 
 .navigation {
   display: flex;
+  flex-wrap:wrap;
+  width: 1200px;
+  height: auto;
 }
 
 .navigation-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+  max-width: 506px
 }
 
 .navigation-user {
-  margin: 0 70px 0 auto;
+  margin: 0 71px 0 auto;
+  max-width: 268px;
 }
 
 .navigation-link {
@@ -463,16 +466,21 @@ button:disabled {
   color: #333333;
 }
 
+.advantages-item:first-child,
+.advantages-item:last-child{
+  width: 1200px;
+}
+
 .advantages-description {
   padding: 0;
   margin: 30px 0 0 0;
 }
 
 .advantage-text {
-  min-width: 230px;
+  min-width: 235px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  margin: auto;
   text-align: center;
   padding: 102px 85px;
   width: 400px;
@@ -540,7 +548,7 @@ button:disabled {
 
 .services-item {
   display: block;
-  padding: 80px 85px;
+  padding: 81px 85px;
   justify-content: center;
   align-items: flex-start;
   color: #333333;
@@ -635,7 +643,7 @@ button:disabled {
 }
 
 .newsletter {
-  padding: 96px 258px 104px;
+  padding: 97px 258px 104px;
   color: #ffffff;
   font-size: 22px;
   line-height: 26px;
@@ -685,7 +693,7 @@ button:disabled {
 .page-footer {
   margin: 0 auto;
   width: 1200px;
-  min-height: 120px;
+  min-height: 131px;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
