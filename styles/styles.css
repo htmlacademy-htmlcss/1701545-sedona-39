@@ -58,7 +58,7 @@ body {
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  height: 100%;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -426,6 +426,7 @@ button:disabled {
   align-items: center;
   padding: 69px 0 90px 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /* Приемущества */
@@ -474,6 +475,8 @@ button:disabled {
   justify-content: center;
   text-align: center;
   padding: 102px 85px;
+  width: 400px;
+  box-sizing: border-box;
 }
 
 .advantages-title-list,
@@ -743,13 +746,19 @@ button:disabled {
   min-height: 40px;
 }
 
+.page-footer-number {
+  width: 720px;
+}
+
 .page-footer-phone {
   display: block;
   font-size: 40px;
   line-height: 40px;
-  color: #000;
+  color: #000000;
   text-decoration: none;
-  margin: 50px 194px 50px 195px;
+  width: 720px;
+  height: 40px;
+  text-align: center;
 }
 
 .page-footer-phone:hover {
@@ -764,22 +773,23 @@ button:disabled {
   color: #7561574d;
 }
 
-.page-footer-logo,
-.page-footer-logo-link {
-  margin: 50px 70px 0 0;
-  width: 115px;
-  position: relative;
+.page-footer-logo {
+  display: block;
+  margin-right: 70px;
   padding: 0;
+  position: relative;
+  width: 115px;
 }
 
+.page-footer-logo-link,
 .html-logo-icon {
   fill: #000000;
   position: absolute;
   display: block;
-  top: 15px;
-  bottom: 0;
   right: 0;
   left: 0;
+  top: 0;
+  bottom: 0;
   margin: auto;
 }
 
@@ -843,6 +853,7 @@ button:disabled {
   padding: 12px 38px 12px 20px;
   box-sizing: border-box;
   cursor: pointer;
+  appearance: textfield;
 }
 
 .price-filters-input:hover,
