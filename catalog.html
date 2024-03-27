@@ -30,7 +30,7 @@
 
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="#" aria-label="Поиск гостиниц">
                 <svg class="navigation-user-icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor">
                   <path
@@ -40,7 +40,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="#" aria-label="В избранном">
                 <svg class="navigation-user-icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
                   <path
@@ -177,27 +177,26 @@
               <b class="subtitle sorting-subtitle">Найдено гостиниц:</b>
               <span class="sorting-page">38</span>
             </div>
-            <select class="sorting-select" name="sorting-result-select">
+            <select class="sorting-select" name="sorting-result-select" aria-label="Сортировка гостиниц">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
             <ul class="sorting-button-list">
               <li class="sorting-button-item">
-                <button class="sorting-button-icon sorting-button-icon-current sorting-button-icon-grid" type="button"
-                  name="button-grid">
+                <a class="sorting-button-icon sorting-button-icon-current sorting-button-icon-grid" href="#">
                   <span class="visually-hidden">Плитка</span>
-                </button>
+                </a>
               </li>
               <li class="sorting-button-item">
-                <button class="sorting-button-icon sorting-button-icon-slide" type="button" name="button-slide">
+                <a class="sorting-button-icon sorting-button-icon-slide" href="#">
                   <span class="visually-hidden">Слайд</span>
-                </button>
+                </a>
               </li>
               <li class="sorting-button-item">
-                <button class="sorting-button-icon  sorting-button-icon-list" type="button" name="button-list">
+                <a class="sorting-button-icon  sorting-button-icon-list" href="#">
                   <span class="visually-hidden">Список</span>
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -289,8 +288,7 @@
                   <span class="rating-number">Рейтинг: 5,0</span>
                 </div>
               </li>
-              </ul>
-            <div class="diving-line"></div>
+            </ul>
             <ul class="pagination-catalog-list">
               <li class="pagination-catalog-item pagination-catalog-current">
                 <a class="pagination-catalog-link pagination-catalog-link-current">1</a>
@@ -368,7 +366,7 @@
           <a class="page-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="page-footer-logo">
-          <a class="page-footer-logo-link" href="https://htmlacademy.ru/">
+          <a class="page-footer-logo-link" href="https://htmlacademy.ru/" aria-label="Ссылка-логотип на HTML-academy">
             <svg class="html-logo-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
               width="115" height="34" fill="currentColor">
               <path
