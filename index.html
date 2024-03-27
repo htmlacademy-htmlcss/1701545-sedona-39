@@ -210,19 +210,23 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="visit-form-date" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="date-visit">
-                <label class="modal-label-title date-visit-title" for="data-visit">Дата заезда:</label>
-                <input class="date-visit-input" type="text" name="date-visiit" id="data-visit" value="27 апреля 2020"
+              <div class="date-group">
+                <div class="date-visit">
+                  <label class="modal-label-title date-visit-title" for="data-visit">Дата заезда:</label>
+                  <input class="date-visit-input" type="text" name="date-visiit" id="data-visit" value="27 апреля 2020"
                   placeholder="Укажите дату" required>
-                <span class="modal-calendar-icon"></span>
+                  <span class="modal-calendar-icon"></span>
+                </div>
                 <span class="modal-first-comment">Мы не можем отправить вас в прошлое.</span>
               </div>
+              <div class="date-group">
               <div class="date-leave">
                 <label class="modal-label-title date-leave-title" for="date-leave">Дата выезда:</label>
                 <input class="date-visit-input" type="text" name="date-leave" id="date-leave" value="1 сентября 2023"
                   placeholder="Укажите дату">
                 <span class="modal-calendar-icon"></span>
-                <span class="modal-second-comment">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+              <span class="modal-second-comment">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <div class="modal-number-passengers">
                 <div class="grown-number">

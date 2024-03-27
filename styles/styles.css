@@ -1528,13 +1528,16 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
 }
 
 .date-visit {
   position: relative;
 }
 
+.date-group {
+  margin: 0;
+  margin-bottom: 23px;
+}
 
 .date-visit-input {
   cursor: pointer;
@@ -1575,14 +1578,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .modal-first-comment {
+  display: inline-block;
   color: #FF5757;
-  position: absolute;
-  top: 52px;
-  left: 137px;
-  padding-left: 20px;
   font-size: 16px;
-  width: 280px;
-  height: 21px;
+  width: 420px;
+  max-height: 21px;
+  margin-left: 156px;
 }
 
 .date-leave {
@@ -1590,12 +1591,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .modal-second-comment {
+  display: inline-block;
   color: #333333;
-  position: absolute;
-  top: 52px;
-  left: 137px;
-  padding-left: 20px;
   font-size: 16px;
+  margin-left: 156px;
+  width: 420px;
+  max-height: 21px;
 }
 
 .modal-number-passengers {
