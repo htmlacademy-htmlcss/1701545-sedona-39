@@ -1448,9 +1448,9 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal-visit {
   width: 577px;
@@ -1536,7 +1536,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .date-group {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 26px;
 }
 
 .date-visit-input {
