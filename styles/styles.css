@@ -1603,6 +1603,8 @@ input[type="number"]::-webkit-outer-spin-button {
   display: flex;
   justify-content: space-between;
   margin-bottom: 48px;
+  max-width: 577px;
+  flex-wrap: wrap;
 }
 
 .grown-number,
