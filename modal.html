@@ -30,7 +30,7 @@
 
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="#" aria-label="Поиск гостиниц">
                 <svg class="navigation-user-icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor">
                   <path
@@ -40,7 +40,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link" href="#" aria-label="В избранном">
                 <svg class="navigation-user-icon" aria-hidden="true" focusable="false"
                   xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
                   <path
@@ -186,7 +186,7 @@
           <a class="page-footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
         <div class="page-footer-logo">
-          <a class="page-footer-logo-link" href="https://htmlacademy.ru/">
+          <a class="page-footer-logo-link" href="https://htmlacademy.ru/" aria-label="Ссылка-логотип на HTML-academy">
             <svg class="html-logo-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
               width="115" height="34" fill="currentColor">
               <path
@@ -195,7 +195,7 @@
           </a>
         </div>
       </footer>
-      <div class="modal-container" data-test="modal">
+      <div class="modal-container">
         <div class="modal modal-visit">
           <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
@@ -210,18 +210,22 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="visit-form-date" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="date-visit">
-                <label class="modal-label-title date-visit-title" for="data-visit">Дата заезда:</label>
-                <input class="date-visit-input" type="text" name="date-visiit" id="data-visit" value="27 апреля 2020"
-                  placeholder="Укажите дату" required>
-                <span class="modal-calendar-icon"></span>
+              <div class="date-group">
+                <div class="date-visit">
+                  <label class="modal-label-title date-visit-title" for="data-visit">Дата заезда:</label>
+                  <input class="date-visit-input" type="text" name="date-visiit" id="data-visit" value="27 апреля 2020"
+                    placeholder="Укажите дату" required>
+                  <span class="modal-calendar-icon"></span>
+                </div>
                 <span class="modal-first-comment">Мы не можем отправить вас в прошлое.</span>
               </div>
-              <div class="date-leave">
-                <label class="modal-label-title date-leave-title" for="date-leave">Дата выезда:</label>
-                <input class="date-visit-input" type="text" name="date-leave" id="date-leave" value="1 сентября 2023"
-                  placeholder="Укажите дату">
-                <span class="modal-calendar-icon"></span>
+              <div class="date-group">
+                <div class="date-leave">
+                  <label class="modal-label-title date-leave-title" for="date-leave">Дата выезда:</label>
+                  <input class="date-visit-input" type="text" name="date-leave" id="date-leave" value="1 сентября 2023"
+                    placeholder="Укажите дату">
+                  <span class="modal-calendar-icon"></span>
+                </div>
                 <span class="modal-second-comment">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <div class="modal-number-passengers">
@@ -230,7 +234,7 @@
                   <button class="button-modal-number button-minus" type="button">
                     <svg class="modal-button-minus-icon" aria-hidden="true" focusable="false"
                       xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
-                      <path d="M3 9v2h14V9H3Z"/>
+                      <path d="M3 9v2h14V9H3Z" />
                     </svg>
                     <span class="visually-hidden">Кнопка меньше</span>
                   </button>
@@ -253,13 +257,14 @@
                         <path clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
                       </svg>
                     </button>
-                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                      18
                       лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                   <button class="button-modal-number button-minus" type="button">
                     <svg class="modal-button-minus-icon" aria-hidden="true" focusable="false"
                       xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor">
-                      <path d="M3 9v2h14V9H3Z"/>
+                      <path d="M3 9v2h14V9H3Z" />
                     </svg>
                     <span class="visually-hidden">Кнопка меньше</span>
                   </button>
